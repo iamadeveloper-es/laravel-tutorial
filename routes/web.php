@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');;
 
 Route::get('/prueba2', function () {
     return 'prueba 2 dani';
@@ -33,3 +33,11 @@ Route::get('client/{id?}', function ($id=0) {
 Route::get('product/{id?}', function ($id=0) {
     return view('product', array('id' => $id));
 })->where("id", "[0-9]+");
+
+Route::get('noticias', function () {
+    return view('noticias');
+})->name('noticias');
+
+Route::get('blog', function () {
+    return view('blog');
+})->name('blog');

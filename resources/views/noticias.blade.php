@@ -1,14 +1,14 @@
 @extends('layout')
 
 @section('title')
-    Home
+    Noticias
 @endsection
 
 @section('content')
 <div>
-    <h1>Home</h1>
-    <p>Bienvenido a la home</p>
+    <h1>Noticias</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates voluptate, nemo fugiat magnam aut quidem repudiandae ipsa consectetur itaque, laboriosam dicta ratione sequi. Quidem laudantium aliquid expedita placeat odio pariatur?</p>
+    <p>Noticas ...</p>
 </div>
     
 @endsection
