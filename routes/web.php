@@ -16,3 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/prueba2', function () {
+    return 'prueba 2 dani';
+});
+
+Route::get('client/{id?}', function ($id=0) {
+    if($id==0){
+        return 'No hay cliente';
+    }
+    else{
+        return 'el id del cliente es: '.$id;
+    }
+})->where("id", "[0-9]+");
+
+Route::get('product/{id?}', function ($id=0) {
+    return view('product', array('id' => $id));
+})->where("id", "[0-9]+");
