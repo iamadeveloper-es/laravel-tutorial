@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\controlador;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,8 @@ Route::get('noticias', function () {
 Route::get('blog', function () {
     return view('blog');
 })->name('blog');
+
+// Controllers
+Route::get('noticias-controller', [controlador::class, 'noticias'])->name('noticias-controller');
+Route::get('blog-controller', [controlador::class, 'blog'])->name('blog-controller');
+Route::get('lista/{nombre?}', [controlador::class, 'lista'])->name('lista');
