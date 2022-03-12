@@ -23,6 +23,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('lista') }}">Lista Controller</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('lista-db') }}">Lista DB</a>
+            </li>
         </ul>
         </div>
     </div>

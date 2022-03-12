@@ -47,3 +47,5 @@ Route::get('blog', function () {
 Route::get('noticias-controller', [controlador::class, 'noticias'])->name('noticias-controller');
 Route::get('blog-controller', [controlador::class, 'blog'])->name('blog-controller');
 Route::get('lista/{nombre?}', [controlador::class, 'lista'])->name('lista');
+//bbdd
+Route::get('lista-db', [controlador::class, 'listaDB'])->name('lista-db');
